@@ -3,9 +3,9 @@
 
 
 <h2>Skills on Frontend Server</h2>
-- Javascript
-- React, React-Router, React-hook-form, Axios 
-- Figma, VSCode, Github, Docker
+- Javascript<br>
+- React, React-Router, React-hook-form, Axios<br> 
+- Figma, VSCode, Github, Docker<p>
 
 
 <h2>Members</h2>
