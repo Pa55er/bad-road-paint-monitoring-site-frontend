@@ -1,4 +1,5 @@
-<h1>동아대학교 컴퓨터공학과 졸업 프로젝트</h1>
+<h1>동아대학교 컴퓨터공학과 졸업 프로젝트 프론트엔드 서버</h1>
+백엔드 서버 : https://github.com/N0N4M3D-b/final-backend
 
 <h2>Members</h2>
 윤석준 - Frontend<br>
