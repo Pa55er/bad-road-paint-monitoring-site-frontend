@@ -1,0 +1,71 @@
+#Findpwinput_rectangle_1 {
+    border: 1px solid rgba(0, 0, 0, 0.50);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background: #333A46;
+    position: relative;
+    width: 646px;
+    height: 309px;
+    top: 311px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+#Findpwniput_rectangle_2 {
+    position: relative;
+    width: 407px;
+    height: 72px;
+    border: 1px solid rgba(0, 0, 0, 0.50);
+    background-color: #cccccc;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    top: 72px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+#Findpwniput_email {
+    position: relative;
+    width: 347px;
+    height: 24px;
+    border: none;
+    color: #000000;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #cccccc;
+}
+#Findpw_submit {
+    position: relative;
+    width: 180px;
+    height: 72px;
+    background-color: #2D9CDB;
+    border: none;
+    top: 72px;
+    left: 133px;
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+#Findpw_cancel {
+    position: relative;
+    width: 180px;
+    height: 72px;
+    background-color: #2D9CDB;
+    border: none;
+    top: 88.5px;
+    left: 153px;
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}

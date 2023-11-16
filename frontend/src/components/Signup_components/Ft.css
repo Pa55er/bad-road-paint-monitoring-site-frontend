@@ -1,0 +1,98 @@
+#ft {
+    position: relative;
+    width: 645.57px;
+    height: 628px;
+    background-color: #333a46;
+    top: 345px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    border: 1px solid rgba(0, 0, 0, 0.50);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+#name_box {
+    width: 407px;
+    height: 72px;
+    position: relative;
+    top: 72px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    background-color: #cccccc;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+#email_box {
+    width: 407px;
+    height: 72px;
+    position: relative;
+    top: 93px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    background-color: #cccccc;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+#ps_box {
+    width: 407px;
+    height: 72px;
+    position: relative;
+    top: 114px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    background-color: #cccccc;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+#pn_box {
+    width: 407px;
+    height: 72px;
+    position: relative;
+    top: 135px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    background-color: #cccccc;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+#signup_button {
+    position: relative;
+    width: 180px;
+    height: 72px;
+    border: none;
+    background-color: #2D9CDB;
+    color: #ffffff;
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    top: 196px;
+    left: 133px;
+}
+#cancel_button {
+    position: relative;
+    width: 180px;
+    height: 72px;
+    border: none;
+    background-color: #2D9CDB;
+    color: #ffffff;
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    top: 196px;
+    left: 151px;
+}
+.ft_input {
+    position: relative;
+    background-color: #cccccc;
+    border: none;
+    color: #000000;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 347px;
+    height: 24px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

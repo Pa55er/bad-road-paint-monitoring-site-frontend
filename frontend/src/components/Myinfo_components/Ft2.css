@@ -1,0 +1,213 @@
+#ft_2 {
+    position: relative;
+    width: 860px;
+    height: 1167px;
+    top: 207px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    background-color: #333a46;
+    border: 1px solid rgba(0, 0, 0, 0.50);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+#ft_2_nameLabel {
+    position: relative;
+    width: 67px;
+    height: 24px;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    top: 67px;
+    left: 165px;
+}
+#ft_2_emailLabel {
+    position: relative;
+    width: 62px;
+    height: 24px;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    top: 67px;
+    left: 170px;
+}
+
+#ft_2_pnLabel {
+    position: relative;
+    width: 153px;
+    height: 24px;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    top: 67px;
+    left: 79px;
+}
+.ft_2_infoRectangle {
+    position: relative;
+    width: 400px;
+    height: 72px;
+    border: 1px solid rgba(0, 0, 0, 0.50);
+    background: rgba(255, 255, 255, 0.80);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    top: 19px;
+    left: 283px;
+}
+.ft_2_infoValue {
+    position: relative;
+    color: #000000;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    top: 24px;
+    left: 30px;
+    width: 340px;
+    height: 24px;
+}
+#ft_2_backbutton {
+    position: relative;
+    width: 180px;
+    height: 72px;
+    background: #2D9CDB;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    border: none;
+    top: 64px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+#ft_2_deleteLabel {
+    position: relative;
+    width: 442px;
+    height: 48px;
+    color: #FFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Inter;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    top: 115px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+#ft_2_deletebutton {
+    position: relative;
+    width: 180px;
+    height: 72px;
+    background: #2D9CDB;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    border: none;
+    top: 155px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+#Myinfo_input_rectangle {
+    position: relative;
+    width: 860px;
+    height: 461px;
+    top: 70px;
+}
+#Myinfo_input_oldLabel {
+    position: relative;
+    width: 141px;
+    height: 24px;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    top: 94px;
+    left: 91px;
+}
+#Myinfo_input_newLabel {
+    position: relative;
+    width: 152px;
+    height: 24px;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    top: 91px;
+    left: 80px;
+}
+#Myinfo_input_confirmLabel {
+    position: relative;
+    width: 184px;
+    height: 24px;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    top: 91px;
+    left: 48px;
+}
+.Myinfo_input_rectangle_1 {
+    position: relative;
+    width: 400px;
+    height: 72px;
+    background-color: #cccccc;
+    border: 1px solid rgba(0, 0, 0, 0.50);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    top: 44px;
+    left: 283px;
+}
+.Myinfo_input_value {
+    position: relative;
+    width: 340px;
+    height: 24px;
+    border: none;
+    background-color: #cccccc;
+    color: #000000;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#Myinfo_input_save {
+    position: relative;
+    width: 180px;
+    height: 72px;
+    border: none;
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    top: 124px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #2D9CDB;
+}

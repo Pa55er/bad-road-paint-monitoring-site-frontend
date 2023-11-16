@@ -1,0 +1,31 @@
+#user_rectangle {
+    position: relative;
+    width: 700px;
+    height: 30px;
+    top: 25px;
+    left: 30px;
+}
+#menu_label {
+    position: relative;
+    width: 86px;
+    height: 30px;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+#menu_username {
+    position: absolute;
+    width: 500px;
+    height: 30px;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    top: 0px;
+    left: 105px;
+}

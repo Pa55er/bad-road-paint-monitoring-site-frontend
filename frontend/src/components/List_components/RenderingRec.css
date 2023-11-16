@@ -1,0 +1,331 @@
+#unsolved_button {
+    position: relative;
+    width: 455px;
+    height: 60px;
+    border: none;
+    background: #F05650;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    top: -900px;
+    left: 910px;
+}
+#solved_button {
+    position: relative;
+    width: 455px;
+    height: 60px;
+    border: none;
+    background: #3FE87F;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    top: -900px;
+    left: 910px;
+}
+#unsolved_frame {
+    position: absolute;
+    width: 892px;
+    height: 802px;
+    background-color: #F05650;
+    left: 910px;
+    top: 80px;
+    padding: 9px;
+}
+.unsolvedlistRec {
+    position: relative;
+    width: 850px;
+    height: 65px;
+    background-color: #23282f;
+    margin-top: 8px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+.cnlabel {
+    position: relative;
+    width: 125px;
+    height: 22px;
+    color: #B04DFD;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    top: 22px;
+    left: 30px;
+}
+.cnvalue {
+    position: absolute;
+    width: auto;
+    height: 22px;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    left: 167px;
+}
+.gpslabel {
+    position: absolute;
+    width: 47px;
+    height: 22px;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    left: 291px;
+}
+.gpsvalue {
+    position: absolute;
+    width: auto;
+    height: 22px;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration-line: underline;
+    left: 347px;
+}
+.imagebutton {
+    position: absolute;
+    color: #2D9CDB;
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration-line: underline;
+    top: 50%;
+    left: 642px;
+    transform: translate(0%, -50%);
+}
+.sendto_solved {
+    position: absolute;
+    color: #3FE87F;
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration-line: underline;
+    top: 50%;
+    left: 738px;
+    transform: translate(0%, -50%);
+}
+#unsolved_left {
+    position: relative;
+    width: 65px;
+    height: 65px;
+    background: #2D9CDB;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border: none;
+    margin-top: 8px;
+    left: 358px;
+}
+#unsolved_right {
+    position: relative;
+    width: 65px;
+    height: 65px;
+    background: #2D9CDB;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border: none;
+    margin-top: 8px;
+    left: 423px;
+}
+#solved_frame {
+    position: absolute;
+    width: 892px;
+    height: 802px;
+    background-color: #3FE87F;
+    left: 910px;
+    top: 80px;
+    padding: 9px;
+}
+.solvedlistRec {
+    position: relative;
+    width: 850px;
+    height: 138px;
+    background-color: #23282f;
+    margin-top: 8px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+.cnlabel_s {
+    position: relative;
+    width: 125px;
+    height: 22px;
+    color: #B04DFD;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    top: 24px;
+    left: 30px;
+}
+.cnvalue_s {
+    position: absolute;
+    width: auto;
+    height: 22px;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    left: 167px;
+}
+.gpslabel_s {
+    position: absolute;
+    width: 47px;
+    height: 22px;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    left: 291px;
+}
+.gpsvalue_s {
+    position: absolute;
+    width: auto;
+    height: 22px;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration-line: underline;
+    left: 347px;
+}
+.imagebutton_s {
+    position: absolute;
+    color: #2D9CDB;
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration-line: underline;
+    top: 20px;
+    left: 610px;
+}
+.sendto_solved_s {
+    position: absolute;
+    color: #F05650;
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration-line: underline;
+    top: 22px;
+    left: 706px;
+}
+.cwline {
+    position: absolute;
+    width: 800px;
+    height: 1px;
+    background: #FFF;
+    top: 69px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+.personlabel_s {
+    position: absolute;
+    width: 196px;
+    height: 22px;
+    color: #FFFFFF;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    bottom: 23px;
+    left: 30px;
+}
+.personvalue_s {
+    position: absolute;
+    width: auto;
+    height: 22px;
+    color: #FFFFFF;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    bottom: 23px;
+    left: 235px;
+}
+.removebutton_s {
+    position: absolute;
+    color: #E9EC69;
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration-line: underline;
+    bottom: 19px;
+    right: 27px;
+}
+#solved_left {
+    position: relative;
+    width: 65px;
+    height: 65px;
+    background: #2D9CDB;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border: none;
+    margin-top: 8px;
+    left: 358px;
+}
+#solved_right {
+    position: relative;
+    width: 65px;
+    height: 65px;
+    background: #2D9CDB;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border: none;
+    margin-top: 8px;
+    left: 423px;
+}
+#changeUnsolvedColor {
+    background-color: #364151;
+}
+#changeSolvedColor {
+    background-color: #364151;
+}

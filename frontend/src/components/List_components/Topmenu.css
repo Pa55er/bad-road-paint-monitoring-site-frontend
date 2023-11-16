@@ -1,0 +1,36 @@
+#menu_rectangle {
+    position: relative;
+    width: 100%;
+    height: 80px;
+    background-color: #364151;
+}
+#mypage_button {
+    position: absolute;
+    width: 120px;
+    height: 56px;
+    background-color: #2D9CDB;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border: none;
+    top: 12px;
+    right: 180px;
+}
+#signout_button {
+    position: absolute;
+    width: 120px;
+    height: 56px;
+    background-color: #2D9CDB;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border: none;
+    top: 12px;
+    right: 30px;
+}
