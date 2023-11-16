@@ -1,6 +1,13 @@
 <h1>동아대학교 컴퓨터공학과 졸업 프로젝트 프론트엔드 서버</h1>
 백엔드 서버 : https://github.com/N0N4M3D-b/final-backend
 
+
+<h2>Skills on Frontend Server</h2>
+- Javascript
+- React, React-Router, React-hook-form, Axios 
+- Figma, VSCode, Github, Docker
+
+
 <h2>Members</h2>
 윤석준 - Frontend<br>
 박진명 - Backend<br>
