@@ -4,7 +4,7 @@
 
 <h2>Skills on Frontend Server</h2>
 - Javascript<br>
-- React, React-Router, React-hook-form, Axios<br> 
+- React, React-Router, React-hook-form, Axios, JWT<br> 
 - Figma, VSCode, Github, Docker<p>
 
 
