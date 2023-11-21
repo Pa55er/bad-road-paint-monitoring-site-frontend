@@ -29,6 +29,7 @@ export default function Midf() {
                 alert("Signin failed!\nPlease try again.\n");
             }
             else if(response.data.status === 200) {
+                localStorage.setItem("token", response.data.token);
                 alert("Signin was successful!\n");
                 navigate("/list", {
                     state: {

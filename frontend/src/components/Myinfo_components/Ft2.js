@@ -15,11 +15,32 @@ export default function Ft2({ userName, userEmail }) {
     async function loadingMyinfo() {
         try {
             setLoading(true);
-            const response = await axios.post("/backend/myinfo", {
-                email: userEmail
+            const token = localStorage.getItem("token");
+            const response = await axios.post("/backend/myinfo",
+            {},
+            {
+                headers: {Authorization: token,},
             });
-            setPhoneNum(response.data.tel);
+            if(response.data.status === 401) {
+                localStorage.removeItem("token");
+                alert("You were automatically logged out because you haven't used it for 10 minutes!\nPlease log in again.\n");
+                navigate("/signin", {
+                    replace: true
+                });
+            }
+            else if(response.data.status === 403) {
+                localStorage.removeItem("token");
+                alert("Wrong approach!\nPlease log in again.\n");
+                navigate("/signin", {
+                    replace: true
+                });
+            }
+            else if(response.data.status === 200) {
+                localStorage.setItem("token", response.data.token);
+                setPhoneNum(response.data.tel);
+            }
         } catch (error) {
+            localStorage.removeItem("token");
             alert("Cannot connect with Backend server!\n");
             navigate("/signin", {
                 replace: true
@@ -63,19 +84,39 @@ export default function Ft2({ userName, userEmail }) {
     async function onSubmit(data) {
         try {
             setLoading(true);
-            data.email = userEmail;
             delete data.confirm;
-            const response = await axios.put("/backend/myinfo", data);
+            const token = localStorage.getItem("token");
+            const response = await axios.put("/backend/myinfo", data,
+            {
+                headers: {Authorization: token,},
+            });
             if(response.data.status === 40000) {
+                localStorage.setItem("token", response.data.token);
                 alert("Failed to change!\n");
             }
             else if(response.data.status === 200) {
+                localStorage.removeItem("token");
                 alert("Your password changed successfully!\nPlease sign in again.\n");
                 navigate('/signin', {
                     replace: true
                 })
             }
+            else if(response.data.status === 401) {
+                localStorage.removeItem("token");
+                alert("You were automatically logged out because you haven't used it for 10 minutes!\nPlease log in again.\n");
+                navigate("/signin", {
+                    replace: true
+                });
+            }
+            else if(response.data.status === 403) {
+                localStorage.removeItem("token");
+                alert("Wrong approach!\nPlease log in again.\n");
+                navigate("/signin", {
+                    replace: true
+                });
+            }
         } catch (error) {
+            localStorage.removeItem("token");
             alert("Cannot connect with Backend server!\n");
             navigate("/signin", {
                 replace: true
@@ -87,21 +128,41 @@ export default function Ft2({ userName, userEmail }) {
     async function handleMyinfoDelete() {
         try {
             setLoading(true);
-            const response = await axios.delete("/backend/myinfo", {
-                data: {
-                    email: userEmail
-                },
+            const token = localStorage.getItem("token");
+            const response = await axios.delete("/backend/myinfo",
+            {
+                headers: {Authorization: token,},
             });
             if(response.data.status === 200) {
+                localStorage.removeItem("token");
                 alert("Your account has been successfully deleted!\n");
                 navigate("/signin", {
                     replace: true
                 });
             }
+            else if(response.data.status === 401) {
+                localStorage.removeItem("token");
+                alert("You were automatically logged out because you haven't used it for 10 minutes!\nPlease log in again.\n");
+                navigate("/signin", {
+                    replace: true
+                });
+            }
+            else if(response.data.status === 403) {
+                localStorage.removeItem("token");
+                alert("Wrong approach!\nPlease log in again.\n");
+                navigate("/signin", {
+                    replace: true
+                });
+            }
             else {
-                alert("Failed to delete account!\n");
+                localStorage.removeItem("token");
+                alert("Failed to delete account!\nPlease log in again.\n");
+                navigate("/signin", {
+                    replace: true
+                });
             }
         } catch (error) {
+            localStorage.removeItem("token");
             alert("Cannot connect with Backend server!\n");
             navigate("/signin", {
                 replace: true
