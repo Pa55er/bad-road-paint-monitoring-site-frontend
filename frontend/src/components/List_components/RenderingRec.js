@@ -43,12 +43,32 @@ export default function RenderingRec({ userEmail, handleGPSChange }) {
     async function loadingList1() {
         try {
             handleDataChange(true);
-            const response1 = await axios.get(`/backend/list/unsolved/${indexUnsolved}`);
+            const token = localStorage.getItem("token");
+            const response1 = await axios.get(`/backend/list/unsolved/${indexUnsolved}`,
+            {
+                headers: {Authorization: token,},
+            });
             if(response1.data.status === 40000) {
+                localStorage.setItem("token", response1.data.token);
                 alert("Out of boundary because of changes!\nreload list.\n");
                 setShowUnsolved(false);
             }
+            else if(response1.data.status === 401) {
+                localStorage.removeItem("token");
+                alert("You were automatically logged out because you haven't used it for 10 minutes!\nPlease log in again.\n");
+                navigate("/signin", {
+                    replace: true
+                });
+            }
+            else if(response1.data.status === 403) {
+                localStorage.removeItem("token");
+                alert("Wrong approach!\nPlease log in again.\n");
+                navigate("/signin", {
+                    replace: true
+                });
+            }
             else {
+                localStorage.setItem("token", response1.data.token);
                 let jsonList1 = [];
                 for(let i = 0; i < response1.data.data.length; i++) {
                     jsonList1.push(response1.data.data[i]);
@@ -57,6 +77,7 @@ export default function RenderingRec({ userEmail, handleGPSChange }) {
                 setPageUnsolved(response1.data.status);
             }
         } catch (error) {
+            localStorage.removeItem("token");
             alert("Cannot connect with Backend server!\n");
             navigate("/signin", {
                 replace: true
@@ -74,12 +95,32 @@ export default function RenderingRec({ userEmail, handleGPSChange }) {
     async function loadingList2() {
         try {
             handleDataChange(true);
-            const response2 = await axios.get(`/backend/list/solved/${indexSolved}`);
+            const token = localStorage.getItem("token");
+            const response2 = await axios.get(`/backend/list/solved/${indexSolved}`,
+            {
+                headers: {Authorization: token,},
+            });
             if(response2.data.status === 40000) {
+                localStorage.setItem("token", response2.data.token);
                 alert("Out of boundary because of changes!\nreload list.\n");
                 setShowSolved(false);
             }
+            else if(response2.data.status === 401) {
+                localStorage.removeItem("token");
+                alert("You were automatically logged out because you haven't used it for 10 minutes!\nPlease log in again.\n");
+                navigate("/signin", {
+                    replace: true
+                });
+            }
+            else if(response2.data.status === 403) {
+                localStorage.removeItem("token");
+                alert("Wrong approach!\nPlease log in again.\n");
+                navigate("/signin", {
+                    replace: true
+                });
+            }
             else {
+                localStorage.setItem("token", response2.data.token);
                 let jsonList2 = [];
                 for(let i = 0; i < response2.data.data.length; i++) {
                     jsonList2.push(response2.data.data[i]);
@@ -88,6 +129,7 @@ export default function RenderingRec({ userEmail, handleGPSChange }) {
                 setPageSolved(response2.data.status);
             }
         } catch (error) {
+            localStorage.removeItem("token");
             alert("Cannot connect with Backend server!\n");
             navigate("/signin", {
                 replace: true
@@ -104,7 +146,12 @@ export default function RenderingRec({ userEmail, handleGPSChange }) {
         else {
             try {
                 handleDataChange(true);
-                const response = await axios.get(`/backend/list/unsolved/${indexUnsolved - 10}`);
+                const token = localStorage.getItem("token");
+                const response = await axios.get(`/backend/list/unsolved/${indexUnsolved - 10}`,
+                {
+                    headers: {Authorization: token,},
+                });
+                localStorage.setItem("token", response.data.token);
                 let jsonList = [];
                 for(let i = 0; i < response.data.data.length; i++) {
                     jsonList.push(response.data.data[i]);
@@ -113,6 +160,7 @@ export default function RenderingRec({ userEmail, handleGPSChange }) {
                 setPageUnsolved(response.data.status);
                 setIndexUnsolved(indexUnsolved - 10);
             } catch (error) {
+                localStorage.removeItem("token");
                 alert("Cannot connect with Backend server!\n");
                 navigate("/signin", {
                     replace: true
@@ -129,7 +177,12 @@ export default function RenderingRec({ userEmail, handleGPSChange }) {
         else {
             try {
                 handleDataChange(true);
-                const response = await axios.get(`/backend/list/unsolved/${indexUnsolved + 10}`);
+                const token = localStorage.getItem("token");
+                const response = await axios.get(`/backend/list/unsolved/${indexUnsolved + 10}`,
+                {
+                    headers: {Authorization: token,},
+                });
+                localStorage.setItem("token", response.data.token);
                 let jsonList = [];
                 for(let i = 0; i < response.data.data.length; i++) {
                     jsonList.push(response.data.data[i]);
@@ -138,6 +191,7 @@ export default function RenderingRec({ userEmail, handleGPSChange }) {
                 setPageUnsolved(response.data.status);
                 setIndexUnsolved(indexUnsolved + 10);
             } catch (error) {
+                localStorage.removeItem("token");
                 alert("Cannot connect with Backend server!\n");
                 navigate("/signin", {
                     replace: true
@@ -155,7 +209,12 @@ export default function RenderingRec({ userEmail, handleGPSChange }) {
         else {
             try {
                 handleDataChange(true);
-                const response = await axios.get(`/backend/list/solved/${indexSolved - 5}`);
+                const token = localStorage.getItem("token");
+                const response = await axios.get(`/backend/list/solved/${indexSolved - 5}`,
+                {
+                    headers: {Authorization: token,},
+                });
+                localStorage.setItem("token", response.data.token);
                 let jsonList = [];
                 for(let i = 0; i < response.data.data.length; i++) {
                     jsonList.push(response.data.data[i]);
@@ -164,6 +223,7 @@ export default function RenderingRec({ userEmail, handleGPSChange }) {
                 setPageSolved(response.data.status);
                 setIndexSolved(indexSolved - 5);
             } catch (error) {
+                localStorage.removeItem("token");
                 alert("Cannot connect with Backend server!\n");
                 navigate("/signin", {
                     replace: true
@@ -180,7 +240,12 @@ export default function RenderingRec({ userEmail, handleGPSChange }) {
         else {
             try {
                 handleDataChange(true);
-                const response = await axios.get(`/backend/list/solved/${indexSolved + 5}`);
+                const token = localStorage.getItem("token");
+                const response = await axios.get(`/backend/list/solved/${indexSolved + 5}`,
+                {
+                    headers: {Authorization: token,},
+                });
+                localStorage.setItem("token", response.data.token);
                 let jsonList = [];
                 for(let i = 0; i < response.data.data.length; i++) {
                     jsonList.push(response.data.data[i]);
@@ -189,6 +254,7 @@ export default function RenderingRec({ userEmail, handleGPSChange }) {
                 setPageSolved(response.data.status);
                 setIndexSolved(indexSolved + 5);
             } catch (error) {
+                localStorage.removeItem("token");
                 alert("Cannot connect with Backend server!\n");
                 navigate("/signin", {
                     replace: true

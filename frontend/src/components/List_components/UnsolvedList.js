@@ -25,23 +25,51 @@ export default function UnsolvedList({ userEmail, caseInfo, handleDataChange, ha
         e.stopPropagation();
         try {
             handleDataChange(true);
+            const token = localStorage.getItem("token");
             const response = await axios.put("/backend/list/unsolved", {
-                caseNum: caseInfo.caseNum,
-                email: userEmail
+                caseNum: caseInfo.caseNum
+            },
+            {
+                headers: {Authorization: token,},
             });
             if(response.data.status === 200) {
+                localStorage.setItem("token", response.data.token);
                 alert("Successfully worked!\nRefresh the page.\n");
                 childUnsolvedMove();
             }
             else if(response.data.status === 40000) {
+                localStorage.setItem("token", response.data.token);
                 alert("Invalid user access!\nRefresh the page.\n");
                 childUnsolvedMove();
             }
             else if(response.data.status === 40001) {
+                localStorage.setItem("token", response.data.token);
                 alert("Invalid case number!\nRefresh the page.\n");
                 childUnsolvedMove();
             }
+            else if(response.data.status === 401) {
+                localStorage.removeItem("token");
+                alert("You were automatically logged out because you haven't used it for 10 minutes!\nPlease log in again.\n");
+                navigate("/signin", {
+                    replace: true
+                });
+            }
+            else if(response.data.status === 403) {
+                localStorage.removeItem("token");
+                alert("Wrong approach!\nPlease log in again.\n");
+                navigate("/signin", {
+                    replace: true
+                });
+            }
+            else {
+                localStorage.removeItem("token");
+                alert("Backend Server Error!\nPlease log in again.\n");
+                navigate("/signin", {
+                    replace: true
+                });
+            }
         } catch (error) {
+            localStorage.removeItem("token");
             alert("Cannot connect with Backend server!\n");
             navigate("/signin", {
                 replace: true
