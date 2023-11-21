@@ -17,6 +17,7 @@ export default function Topmenu({ userName, userEmail }) {
     }
 
     function handleSignoutButton() {
+        localStorage.removeItem("token");
         navigate("/signin", {
             replace: true
         });

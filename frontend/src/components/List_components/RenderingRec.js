@@ -151,14 +151,30 @@ export default function RenderingRec({ userEmail, handleGPSChange }) {
                 {
                     headers: {Authorization: token,},
                 });
-                localStorage.setItem("token", response.data.token);
-                let jsonList = [];
-                for(let i = 0; i < response.data.data.length; i++) {
-                    jsonList.push(response.data.data[i]);
+                if(response.data.status === 401) {
+                    localStorage.removeItem("token");
+                    alert("You were automatically logged out because you haven't used it for 10 minutes!\nPlease log in again.\n");
+                    navigate("/signin", {
+                        replace: true
+                    });
                 }
-                setUnsolvedList(jsonList);
-                setPageUnsolved(response.data.status);
-                setIndexUnsolved(indexUnsolved - 10);
+                else if(response.data.status === 403) {
+                    localStorage.removeItem("token");
+                    alert("Wrong approach!\nPlease log in again.\n");
+                    navigate("/signin", {
+                        replace: true
+                    });
+                }
+                else {
+                    localStorage.setItem("token", response.data.token);
+                    let jsonList = [];
+                    for(let i = 0; i < response.data.data.length; i++) {
+                        jsonList.push(response.data.data[i]);
+                    }
+                    setUnsolvedList(jsonList);
+                    setPageUnsolved(response.data.status);
+                    setIndexUnsolved(indexUnsolved - 10);
+                }
             } catch (error) {
                 localStorage.removeItem("token");
                 alert("Cannot connect with Backend server!\n");
@@ -182,14 +198,30 @@ export default function RenderingRec({ userEmail, handleGPSChange }) {
                 {
                     headers: {Authorization: token,},
                 });
-                localStorage.setItem("token", response.data.token);
-                let jsonList = [];
-                for(let i = 0; i < response.data.data.length; i++) {
-                    jsonList.push(response.data.data[i]);
+                if(response.data.status === 401) {
+                    localStorage.removeItem("token");
+                    alert("You were automatically logged out because you haven't used it for 10 minutes!\nPlease log in again.\n");
+                    navigate("/signin", {
+                        replace: true
+                    });
                 }
-                setUnsolvedList(jsonList);
-                setPageUnsolved(response.data.status);
-                setIndexUnsolved(indexUnsolved + 10);
+                else if(response.data.status === 403) {
+                    localStorage.removeItem("token");
+                    alert("Wrong approach!\nPlease log in again.\n");
+                    navigate("/signin", {
+                        replace: true
+                    });
+                }
+                else {
+                    localStorage.setItem("token", response.data.token);
+                    let jsonList = [];
+                    for(let i = 0; i < response.data.data.length; i++) {
+                        jsonList.push(response.data.data[i]);
+                    }
+                    setUnsolvedList(jsonList);
+                    setPageUnsolved(response.data.status);
+                    setIndexUnsolved(indexUnsolved + 10);
+                }
             } catch (error) {
                 localStorage.removeItem("token");
                 alert("Cannot connect with Backend server!\n");
@@ -214,14 +246,30 @@ export default function RenderingRec({ userEmail, handleGPSChange }) {
                 {
                     headers: {Authorization: token,},
                 });
-                localStorage.setItem("token", response.data.token);
-                let jsonList = [];
-                for(let i = 0; i < response.data.data.length; i++) {
-                    jsonList.push(response.data.data[i]);
+                if(response.data.status === 401) {
+                    localStorage.removeItem("token");
+                    alert("You were automatically logged out because you haven't used it for 10 minutes!\nPlease log in again.\n");
+                    navigate("/signin", {
+                        replace: true
+                    });
                 }
-                setSolvedList(jsonList);
-                setPageSolved(response.data.status);
-                setIndexSolved(indexSolved - 5);
+                else if(response.data.status === 403) {
+                    localStorage.removeItem("token");
+                    alert("Wrong approach!\nPlease log in again.\n");
+                    navigate("/signin", {
+                        replace: true
+                    });
+                }
+                else {
+                    localStorage.setItem("token", response.data.token);
+                    let jsonList = [];
+                    for(let i = 0; i < response.data.data.length; i++) {
+                        jsonList.push(response.data.data[i]);
+                    }
+                    setSolvedList(jsonList);
+                    setPageSolved(response.data.status);
+                    setIndexSolved(indexSolved - 5);
+                }
             } catch (error) {
                 localStorage.removeItem("token");
                 alert("Cannot connect with Backend server!\n");
@@ -245,14 +293,30 @@ export default function RenderingRec({ userEmail, handleGPSChange }) {
                 {
                     headers: {Authorization: token,},
                 });
-                localStorage.setItem("token", response.data.token);
-                let jsonList = [];
-                for(let i = 0; i < response.data.data.length; i++) {
-                    jsonList.push(response.data.data[i]);
+                if(response.data.status === 401) {
+                    localStorage.removeItem("token");
+                    alert("You were automatically logged out because you haven't used it for 10 minutes!\nPlease log in again.\n");
+                    navigate("/signin", {
+                        replace: true
+                    });
                 }
-                setSolvedList(jsonList);
-                setPageSolved(response.data.status);
-                setIndexSolved(indexSolved + 5);
+                else if(response.data.status === 403) {
+                    localStorage.removeItem("token");
+                    alert("Wrong approach!\nPlease log in again.\n");
+                    navigate("/signin", {
+                        replace: true
+                    });
+                }
+                else {
+                    localStorage.setItem("token", response.data.token);
+                    let jsonList = [];
+                    for(let i = 0; i < response.data.data.length; i++) {
+                        jsonList.push(response.data.data[i]);
+                    }
+                    setSolvedList(jsonList);
+                    setPageSolved(response.data.status);
+                    setIndexSolved(indexSolved + 5);
+                }
             } catch (error) {
                 localStorage.removeItem("token");
                 alert("Cannot connect with Backend server!\n");

@@ -19,7 +19,7 @@ app.get('/signin', (req,res) => {
 
 // rest api 요청시 proxy 문제
 app.use('/backend/*', createProxyMiddleware({
-    target: 'http://backend:8080',
+    target: 'http://backend:18080',
     changeOrigin: true,
     pathRewrite: {
         '^/backend': ''
