@@ -12,8 +12,8 @@
 <h2>Members</h2>
 윤석준 - Frontend<br>
 박진명 - Backend<br>
-김종훈 - Researcher + Backend<br>
-한유준 - Researcher<p>
+김종훈 - Researcher(Deep learning) + Backend<br>
+한유준 - Researcher(Deep learning)<p>
 
 
 <h2>About Project</h2>
