@@ -29,4 +29,8 @@
 
 <img width="1897" alt="스크린샷 2023-12-05 185244" src="https://github.com/programmerJuni/final-frontend/assets/57414420/4dadab06-e0c5-42d9-901a-f2d8c75c7eba">
 
+![list_2](https://github.com/programmerJuni/final-frontend/assets/57414420/aad77922-f7cb-4d61-b3d5-e6b21e328e0e)
+
+![list_3](https://github.com/programmerJuni/final-frontend/assets/57414420/c6ef7ba4-9cf0-4126-845d-f662af5c2360)
+
 <img width="1906" alt="스크린샷 2023-12-05 185330" src="https://github.com/programmerJuni/final-frontend/assets/57414420/6f14b078-f7ff-4b11-9362-f3c249cc52a8">
