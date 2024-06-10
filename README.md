@@ -21,7 +21,11 @@
 
 차량에 탑재될 블랙박스 같은 카메라 장치에서 딥러닝 모델을 이용하여 도로주행시 불량 도로 페인트들을 찾아내 백엔드 서버로 해당 도로의 이미지와 위치 정보를 백엔드 서버에 전달합니다. 국토교통부와 같은 도로 유지 보수 기관에 불량 도로 페인트들의 정보를 제공하고 관리할 수 있도록 모니터링 사이트를 구축했습니다.
 
-<img alt="시연영상(gif)" src="https://github.com/programmerJuni/final-frontend/assets/57414420/fe1f6f46-064b-4ffc-8167-63f519db8abb"><br>
+<h2>시연영상</h2>
+
+<img alt="시연영상(mp4)" src="https://github.com/programmerJuni/final-frontend/assets/57414420/fe1f6f46-064b-4ffc-8167-63f519db8abb"><br>
+
+<h2>이미지</h2>
 
 <img width="1895" alt="스크린샷 2023-12-05 185550" src="https://github.com/programmerJuni/final-frontend/assets/57414420/79828bba-4557-4758-8752-3279eccc3670"><br>
 
