@@ -1,5 +1,6 @@
 <h1>동아대학교 컴퓨터공학과 졸업 프로젝트 프론트엔드 서버</h1>
-백엔드 서버 : https://github.com/N0N4M3D-b/final-backend<br>
+백엔드 서버 레포지토리 : https://github.com/N0N4M3D-b/final-backend<br>
+프론트엔드 서버 도커파일 레포지토리 : https://github.com/programmerJuni/final-frontend-dockerfile
 
 
 <h2>Skills on Frontend Server</h2>
