@@ -23,20 +23,20 @@
 
 <h2>시연영상</h2>
 
-<img alt="시연영상(mp4)" src="https://github.com/Pa55er/final-frontend/assets/57414420/fe1f6f46-064b-4ffc-8167-63f519db8abb"><br>
+<img alt="시연영상(mp4)" src="https://github.com/Pa55er/Bad_Road_Paint_Monitoring_Site/assets/57414420/fe1f6f46-064b-4ffc-8167-63f519db8abb"><br>
 
 <h2>이미지</h2>
 
-<img width="1895" alt="스크린샷 2023-12-05 185550" src="https://github.com/Pa55er/final-frontend/assets/57414420/79828bba-4557-4758-8752-3279eccc3670"><br>
+<img width="1895" alt="스크린샷 2023-12-05 185550" src="https://github.com/Pa55er/Bad_Road_Paint_Monitoring_Site/assets/57414420/79828bba-4557-4758-8752-3279eccc3670"><br>
 
-<img width="1902" alt="스크린샷 2023-12-11 181155" src="https://github.com/Pa55er/final-frontend/assets/57414420/cb2b801e-f6e1-4608-8bc3-d8bf41f35fd4"><br>
+<img width="1902" alt="스크린샷 2023-12-11 181155" src="https://github.com/Pa55er/Bad_Road_Paint_Monitoring_Site/assets/57414420/cb2b801e-f6e1-4608-8bc3-d8bf41f35fd4"><br>
 
-<img width="1899" alt="스크린샷 2023-12-11 181005" src="https://github.com/Pa55er/final-frontend/assets/57414420/e44d60d7-a4a1-4db7-bd58-9d0128736496"><br>
+<img width="1899" alt="스크린샷 2023-12-11 181005" src="https://github.com/Pa55er/Bad_Road_Paint_Monitoring_Site/assets/57414420/e44d60d7-a4a1-4db7-bd58-9d0128736496"><br>
 
-<img width="1897" alt="스크린샷 2023-12-05 185244" src="https://github.com/Pa55er/final-frontend/assets/57414420/4dadab06-e0c5-42d9-901a-f2d8c75c7eba"><br>
+<img width="1897" alt="스크린샷 2023-12-05 185244" src="https://github.com/Pa55er/Bad_Road_Paint_Monitoring_Site/assets/57414420/4dadab06-e0c5-42d9-901a-f2d8c75c7eba"><br>
 이미지에는 담기지 않았지만 도로 목록을 클릭하면 Alert창으로 해당 도로에 대한 상세한 정보들을 확인할 수 있습니다.(시연영상으로 확인 가능)<br>
 
-<img width="1115" alt="화면 캡처 2024-06-11 022524" src="https://github.com/Pa55er/final-frontend/assets/57414420/61758179-b0f7-4b9a-b532-f95c0c8d847a"><br>
+<img width="1115" alt="화면 캡처 2024-06-11 022524" src="https://github.com/Pa55er/Bad_Road_Paint_Monitoring_Site/assets/57414420/61758179-b0f7-4b9a-b532-f95c0c8d847a"><br>
 이미지에는 담기지 않았지만 도로 목록을 클릭하면 Alert창으로 해당 도로에 대한 상세한 정보들을 확인할 수 있습니다.(시연영상으로 확인 가능)<br>
 
-<img width="1906" alt="스크린샷 2023-12-05 185330" src="https://github.com/Pa55er/final-frontend/assets/57414420/6f14b078-f7ff-4b11-9362-f3c249cc52a8"><br>
+<img width="1906" alt="스크린샷 2023-12-05 185330" src="https://github.com/Pa55er/Bad_Road_Paint_Monitoring_Site/assets/57414420/6f14b078-f7ff-4b11-9362-f3c249cc52a8"><br>
