@@ -1,4 +1,4 @@
-<h1>동아대학교 컴퓨터공학과 졸업 프로젝트 프론트엔드</h1>
+<h1>졸업 프로젝트 프론트엔드</h1>
 프론트엔드 서버 도커파일 레포지토리 : https://github.com/Pa55er/Bad_Road_Paint_Monitoring_Site_Frontend_Dockerfile<br>
 백엔드 레포지토리 : https://github.com/N0N4M3D-b/final-backend
 
